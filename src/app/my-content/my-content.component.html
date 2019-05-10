@@ -1,0 +1,106 @@
+
+<div class="container-fluid all_info">
+    <div class="row all_my_info col-12 clearfix">
+        <div class="my_img col-md-6">
+            <img src="../../assets/my_img.jpg" style="width: 400px; height: 400px;" alt="my_img" class="rounded-circle">
+        </div>
+        <div class="my_info col-md-6 col-sm-8 float-right">
+            <h2>¿Quién Soy?</h2>
+            <p>
+                Me llamo <b>Sergio Cuesta Jiménez</b>, soy estudiante de Ingenería de Software en <b>U-Tad</b>. <br>
+                Actualmente estoy cursando tercero y cuarto de carrera. <br>
+                Mis conocimientos abarcan el uso de diversos lenguajes de programación como Python, C, C++, Java, C#,
+                PHP, entre otros. La disciplina que más me llama la atención dentro del mundo del desarrollo
+                de software es el campo del <b>Machine Learning: </b> Deep Learning, Data Science... <br>
+                A parte de los conocimientos adquiridos durante la carrera, he realizado por mi cuenta una serie de cursos
+                en la plataforma de <b>Udemy</b>: <br>
+            </p>
+            <ul>
+                <li><a href="https://www.udemy.com/curso-de-deep-learning-con-kerastensorflow-en-python/?src=sac&kw=Deep%20Learning" target="_blank" rel="noopener">Deep Learening e Intelgiencia Artificial con Keras / Tensorflow</a></li>
+                <li><a href="https://www.udemy.com/course/desarrollo-web-completo-con-html5-css3-js-php-y-mysql/" target="_blank" rel="noopener">Desarrollo Web (HTML5, CSS3, AJAX, PHP, JQuery y Mysql)</a></li>
+                <li><a href="https://www.udemy.com/machinelearningpython/" target="_blank" rel="noopener">Curso completo de Machine Learning: Data Science en Python</a></li>
+            </ul>
+        </div> <!-- .my_info -->
+    </div> <!-- .row  .all_my_info-->
+
+    <div class="row my_skills justify-content-center">
+        <div class="row title_my_skills justify-content-center col-12">
+            <h2>Mis Habilidades</h2>
+        </div>
+
+        <div class="info_skills col-md-6 col-sm-6">
+            <div class="progress-label clearfix">
+                <span class="progress-title"><a href="https://unity.com/es" target="_blank" rel="noopener">C#</a></span>
+                <span class="progress-value float-right">20%</span>
+            </div>
+            <div class="progress col-12">
+                <div class="progress-bar bg-info p_1" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+
+            <div class="progress-label clearfix">
+                <span class="progress-title"><a href="https://getbootstrap.com/" target="_blank" rel="noopener">Desarrollo Web</a></span>
+                <span class="progress-value float-right">40%</span>
+            </div>
+            <div class="progress  col-12">
+                <div class="progress-bar bg-info" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+
+            <div class="progress-label clearfix">
+                <span class="progress-title"><a href="https://www.programarya.com/Cursos/C++" target="_blank" rel="noopener">C / C++</a></span>
+                <span class="progress-value float-right">70%</span>
+            </div>
+            <div class="progress col-12">
+                <div class="progress-bar bg-info" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+
+            <div class="progress-label clearfix">
+                <span class="progress-title"><a href="https://www.python.org/" target="_blank" rel="noopener">Python</a></span>
+                <span class="progress-value float-right">85%</span>
+            </div>
+            <div class="progress col-12">
+                <div class="progress-bar bg-info" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+        </div> <!-- .row .info_skills -->
+    </div> <!-- .row .my_skills  -->
+
+    <div class="row projects col-md-12 col-sm-12"  *ngIf="projects != null">
+        <div class="projects-title text-md-center text-sm-center text-xl-center col-12">
+            <h2 id="id-projects">Proyectos Recientes</h2>
+        </div>
+
+        <div class="my-table container">
+            <table class="table-striped table-bordered table-hover table-responsive-md table-responsive-sm">
+                <caption>Lista de Proyectos</caption>
+                <thead>
+                    <tr class=" table-title">
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Descripción</th>
+                        <th scope="col">Lenguaje</th>
+                    </tr>
+                </thead>
+                <tbody class="table-body">
+                    <tr>
+                        <td>{{projects[0].name}}</td>
+                        <td>{{projects[0].description}}</td>
+                        <td>{{projects[0].language}}</td>
+                    </tr>
+                    <tr>
+                        <td>{{projects[1].name}}</td>
+                        <td>{{projects[1].description}}</td>
+                        <td>{{projects[1].language}}</td>
+                    </tr>
+                    <tr>
+                        <td>{{projects[2].name}}</td>
+                        <td>{{projects[2].description}}</td>
+                        <td>{{projects[2].language}}</td>
+                    </tr>
+                    <tr>
+                        <td>{{projects[3].name}}</td>
+                        <td>{{projects[3].description}}</td>
+                        <td>{{projects[3].language}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div> <!-- .my-table -->
+    </div> <!-- .projects -->
+</div> <!-- .container-fluid -->

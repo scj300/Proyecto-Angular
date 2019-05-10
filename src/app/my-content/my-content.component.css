@@ -1,0 +1,142 @@
+
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+
+.container-fluid {
+    margin: 0 auto;
+}
+
+.all_info {
+    padding-top: 10%;
+}
+
+.my_img {
+    padding: 0;
+    padding-left: 15%;
+}
+
+.my_info {
+    font-family: Georgia, serif;
+    padding-left: 3rem;
+    padding-right: 2rem;
+    color: rgb(0, 0, 0);
+}
+
+.my_info > h2{
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.my_info > p{
+    text-align: justify-all;
+}
+
+.my_info > ul * {
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: black;
+}
+
+.my_skills {
+    margin-top: 20%;
+}
+
+.title_my_skills {
+    font-family: Georgia, serif;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    margin-bottom: 5%;
+}
+
+.info_skills > div > p {
+    color: #4f86ff;
+    font-family: SansSerif, serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.progress {
+    margin-bottom: 2.2rem;
+}
+
+.progress > div {
+    font-size: 1rem;
+    text-align: start;
+    margin-left: -15px;
+}
+
+.info_skill {
+    margin: 0 auto;
+    padding: 0;
+}
+.info_skill p {
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+
+.progress-title .progress-value {
+    font-weight: 500;
+    font-family: Georgia, serif;
+    text-transform: capitalize;
+    display: inline-block;
+}
+
+.progress-label .progress-title {
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #4782d3;
+}
+
+.progress-label {
+    margin-bottom: 7px;
+}
+
+.progress-value {
+    color: rgba(76, 76, 76, 0.95) !important;
+}
+
+.progress {
+    margin-bottom: 35px;
+}
+
+.bg-info {
+    border-radius: 100px!important;
+    background-color: #4782d3!important;
+}
+
+.projects-title {
+    margin-top: 8rem;
+    margin-bottom: 3rem;
+    font-weight: 500;
+    font-family: Georgia, serif;
+}
+
+.project-info {
+    display: inline-block;
+}
+
+.my-table {
+    text-align: center;
+    justify-items: center;
+}
+
+.my-table  table {
+    font-family: SansSerif, serif;
+}
+
+.table-body tr{
+    padding-bottom: 1rem;
+    text-align: justify-all;
+    font-weight: 300;
+}
+
+.table-title {
+    font-size: 1.2rem;
+    background-color: #7d9c8a;
+}
+

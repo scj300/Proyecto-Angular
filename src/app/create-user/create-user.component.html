@@ -1,0 +1,13 @@
+<div class="row">
+  <div class="col">
+    <ul>
+      <li class="list-group-item-action p-1" *ngFor="let person of people" [routerLink]="['/users']"
+          style="cursor: pointer">
+        {{person.Name}} ({{person.Mail}})
+      </li>
+    </ul>
+  </div>
+  <div class="col">
+    <router-outlet *ngIf="router.url != '/users'"></router-outlet>
+  </div>
+</div>

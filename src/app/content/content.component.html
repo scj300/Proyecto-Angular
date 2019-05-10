@@ -1,0 +1,23 @@
+
+<div class="container" style="padding-bottom: 50px; padding-top: 50px">
+  <div class="row">
+    <div class="col form-group">
+      <input type="text" [(ngModel)]="name">
+      <button class="btn btn-primary ml-1" [routerLink]="['/users']">Buscar</button>
+      <button class="btn btn-warning ml-1" [routerLink]="['/new']">Nuevo usuario</button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <ul>
+        <li class="list-group-item-action p-1" *ngFor="let person of people" [routerLink]="['/users']"
+            style="cursor: pointer">
+          {{person.Name}} ({{person.Mail}})
+        </li>
+      </ul>
+    </div>
+    <div class="col">
+      <router-outlet *ngIf="router.url != '/users'"></router-outlet>
+    </div>
+  </div>
+</div>
