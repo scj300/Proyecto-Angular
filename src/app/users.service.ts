@@ -11,6 +11,7 @@ export class UsersService {
     constructor(private http: HttpClient) {
     }
 
+    /*
     saveUser(user: User) {
         return this.http.post<User>('http://localhost:8888/user', user)
             .map(user => {
@@ -41,4 +42,6 @@ export class UsersService {
     delete(user: User) {
         return this.http.delete('http://localhost:8888/user/' + user.id);
     }
+    */
+
 }

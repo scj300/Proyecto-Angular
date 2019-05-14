@@ -1,7 +1,7 @@
 
 <div class="container-fluid all_info">
     <div class="row all_my_info col-12 clearfix">
-        <div class="my_img col-md-6">
+        <div class="my_img col-md-6 clearfix">
             <img src="../../assets/my_img.jpg" style="width: 400px; height: 400px;" alt="my_img" class="rounded-circle">
         </div>
         <div class="my_info col-md-6 col-sm-8 float-right">
@@ -72,32 +72,17 @@
             <table class="table-striped table-bordered table-hover table-responsive-md table-responsive-sm">
                 <caption>Lista de Proyectos</caption>
                 <thead>
-                    <tr class=" table-title">
+                    <tr class="table-title">
                         <th scope="col">Nombre</th>
                         <th scope="col">Descripción</th>
                         <th scope="col">Lenguaje</th>
                     </tr>
                 </thead>
                 <tbody class="table-body">
-                    <tr>
-                        <td>{{projects[0].name}}</td>
-                        <td>{{projects[0].description}}</td>
-                        <td>{{projects[0].language}}</td>
-                    </tr>
-                    <tr>
-                        <td>{{projects[1].name}}</td>
-                        <td>{{projects[1].description}}</td>
-                        <td>{{projects[1].language}}</td>
-                    </tr>
-                    <tr>
-                        <td>{{projects[2].name}}</td>
-                        <td>{{projects[2].description}}</td>
-                        <td>{{projects[2].language}}</td>
-                    </tr>
-                    <tr>
-                        <td>{{projects[3].name}}</td>
-                        <td>{{projects[3].description}}</td>
-                        <td>{{projects[3].language}}</td>
+                    <tr *ngFor="let project of projects">
+                        <td><a class="table-link" href="http://localhost:8888/downloads/A*.zip" target="_blank" rel="noopener" download="http://localhost:8888/downloads/A*.zip">{{project.name}}</a></td>
+                        <td>{{project.description}}</td>
+                        <td>{{project.language}}</td>
                     </tr>
                 </tbody>
             </table>

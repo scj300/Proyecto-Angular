@@ -10,6 +10,7 @@ import {Router} from '@angular/router';
 })
 export class RegisterComponent {
 
+    /*
     userForm = new FormGroup({
         name: new FormControl('', Validators.required),
         age: new FormControl(''),
@@ -29,5 +30,5 @@ export class RegisterComponent {
                 console.log(error);
             }
         );
-    }
+    }*/
 }
